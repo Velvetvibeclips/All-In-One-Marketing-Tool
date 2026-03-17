@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketing Secret</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.sub {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.logos img {
+    width: 70px;
+    margin: 10px;
+    filter: grayscale(100%);
+}
+
+.solution {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.cta-btn {
+    padding: 15px 25px;
+    font-size: 18px;
+    background: #00c2ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+.popup-content {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 100px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button.submit-btn {
+    width: 95%;
+    padding: 12px;
+    background: #00c2ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>The All-in-One Marketing Secret Used by 300,000+ Entrepreneurs</h1>
+    <p class="sub">Stop wasting money on multiple tools.</p>
+
+    <div class="logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/ClickFunnels_Logo.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Mailchimp_Logo.png">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Teachable_Logo.png">
+    </div>
+
+    <div class="solution">
+        One tool. One login. $0 to start.
+    </div>
+
+    <button class="cta-btn" onclick="openPopup()">Get Access</button>
+
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>Enter your email to unlock access</h3>
+        <form onsubmit="redirectUser(event)">
+            <input type="email" placeholder="Your email address" required>
+            <button class="submit-btn">Continue</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+function redirectUser(e) {
+    e.preventDefault();
+
+    // OPTIONAL: fake delay (boosts perceived value)
+    setTimeout(() => {
+        window.location.href = "https://systeme.io/?sa=sa0262453474e934c1eb3cc14bacb6c50ee732b44a";
+    }, 1000);
+}
+</script>
+
+</body>
+</html>
